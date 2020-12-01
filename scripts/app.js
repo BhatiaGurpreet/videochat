@@ -176,7 +176,6 @@ socket.on('exitRoom', function (myIdentity) {
 });
 
 function Mute() {
-	CreateVideoElement("123", myStream);
 	if (btnmute.innerHTML == '<i class="fa fa-microphone"></i>') {
 		myStream.getAudioTracks()[0].enabled = false;
 		btnmute.innerHTML = '<i class="fa fa-microphone-slash"></i>'
