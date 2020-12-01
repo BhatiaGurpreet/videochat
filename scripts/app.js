@@ -2,6 +2,7 @@ var socketUrl = 'https://webrtc-singaling.azurewebsites.net/';
 var socket = io(socketUrl, {
 	withCredentials: false
 });
+
 var myIdentity;
 var myStream;
 
