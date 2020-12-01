@@ -10,6 +10,7 @@ function updateLayout() {
         console.log('media matched');
         switch (gridItemsCount) {
             case 0:
+                myVideo.className = "rvideo";
                 break;
             case 1:
                 document.documentElement.style.setProperty(`--colNum`, 1);

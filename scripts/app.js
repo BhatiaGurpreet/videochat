@@ -112,7 +112,8 @@ function ExitRoom() {
 }
 
 socket.on('peerLeft', function (peerIdentity) {
-	document.getElementById(peerIdentity.id).remove();
+	if(document.getElementById(peerIdentity.id))
+		document.getElementById(peerIdentity.id).remove();
 	updateLayout();
 
 });
