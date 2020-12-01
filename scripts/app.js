@@ -1,4 +1,4 @@
-var socketUrl = 'http://localhost:1337/';
+var socketUrl = 'https://webrtc-singaling.azurewebsites.net/';
 var socket = io(socketUrl, {
 	withCredentials: false
 });
@@ -107,7 +107,7 @@ function ExitRoom() {
 	//inform server I am exiting the room
 	myIdentity.id = socket.id;
 	socket.emit('peerLeft', myIdentity);
-	window.location.replace("/");
+	window.location.replace("/videochat");
 }
 
 socket.on('peerLeft', function (peerIdentity) {
