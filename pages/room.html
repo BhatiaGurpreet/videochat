@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Video Room</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- JavaScript and dependencies -->
+    <link rel="stylesheet" href="../stylesheets/webrtcstyle.css">
+    <link rel="stylesheet" href="../stylesheets/layoutstyle.css">
+</head>
+
+<body>
+    <div id="callelements">
+        <div class="wrapper" id="videoelements">
+            <video id="myVideo" class="rvideo" autoplay muted></video>
+        </div>
+    </div>
+    <div id="panel" class="container-fluid">
+        <div id="callControls" class="btn-group">
+            <button id="btnmute" onclick="Mute()" class="btn"><i class="fa fa-microphone"></i></button>
+            <button id="btnexit" onclick="ExitRoom()" class="btn bg-danger"><i class="fa fa-phone"></i></button>
+            <button id="btnscreenshare" onclick="ScreenShare()" class="btn bg-primary"><i
+                    class="fa fa-desktop"></i></button>
+        </div>
+    </div>
+    <script type="text/javascript" src="../scripts/videoLayout.js"></script>
+    <!-- <script type="text/javascript" src="../scripts/jquery.js"></script> -->
+    <script src="../scripts/socket.io.min.js"></script>
+    <script type="text/javascript" src="../scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/7.3.0/adapter.js"></script>
+</body>
+
+</html>
