@@ -114,6 +114,7 @@ function ExitRoom() {
 socket.on('peerLeft', function (peerIdentity) {
 	if(document.getElementById(peerIdentity.id))
 		document.getElementById(peerIdentity.id).remove();
+		
 	updateLayout();
 
 });

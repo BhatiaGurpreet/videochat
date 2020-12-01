@@ -2,7 +2,6 @@ let htmlStyles = window.getComputedStyle(document.querySelector("html"));
 const mediaQuery = window.matchMedia('(max-device-width: 480px)');
 function updateLayout() {
     let htmlStyles = window.getComputedStyle($("html"));
-
     let rowNum = parseInt(htmlStyles.getPropertyValue("--rowNum"));
     let gridItemsCount = document.querySelectorAll('.grid-item').length;
     
